@@ -16,7 +16,7 @@
     devShell = pkgs.mkShell {
       CARGO_INSTALL_ROOT = "${toString ./.}/.cargo";
 
-      buildInputs = with pkgs; [ git cargo rustc rustfmt clippy rust-cbindgen ];
+      buildInputs = with pkgs; [ git gnumake cargo rustc rustfmt clippy rust-cbindgen ];
     };
   });
 }
